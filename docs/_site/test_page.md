@@ -1,3 +1,8 @@
+---
+layout: page
+title: "PAGE-TITLE"
+permalink: /URL-PATH
+---
 #データベースに関するメンタルモデル
 
 ##これは何？
