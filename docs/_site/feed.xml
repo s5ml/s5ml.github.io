@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-20T08:15:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-09-19T20:46:13+09:00</published><updated>2024-09-19T20:46:13+09:00</updated><id>http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-24T03:46:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">POST-TITLE</title><link href="http://localhost:4000/category-1/category-2/2024/09/21/test.html" rel="alternate" type="text/html" title="POST-TITLE" /><published>2024-09-21T08:43:10+09:00</published><updated>2024-09-21T08:43:10+09:00</updated><id>http://localhost:4000/category-1/category-2/2024/09/21/test</id><content type="html" xml:base="http://localhost:4000/category-1/category-2/2024/09/21/test.html"><![CDATA[<h1 id="データベースに関するメンタルモデル">データベースに関するメンタルモデル</h1>
+
+<h2 id="これは何">これは何？</h2>
+
+<p>顧客と開発でデータベースに関する認識ズレを明らかにする</p>
+
+<h2 id="何が問題か">何が問題か？</h2>
+
+<p>データの永続化にはコストがかかる。</p>
+
+<p>データの読み出し、書き込み、両方</p>
+
+<p>読み書きするデータのサイズ、頻度による。データの内容には依存しない</p>
+
+<p>データを効率的に読み書きするには<strong>データベース</strong>が必要。データベースは様々なデータの読み書きが可能。</p>
+
+<p>データベースには多種多様な製品があり、特定のデータの読み書きに特化して性能を出すように作られている。そのため、一度製品導入してから、読み書きの利用方法を変更する場合は大きなコスト負担が必要となる。ここで言うコストとは、金銭的なコストだけでなく、時間や人員リソースなども含む。顧客のメンタルモデルからすると、この事実は受け入れ難い事実だが、データベースに性能を求めるあまり読み書きの利用方法に特化して製品化していることから、避けられない事態となっている</p>
+
+<h1 id="どうやって理解を得るか">どうやって理解を得るか</h1>
+
+<p>実装モデルを止める</p>]]></content><author><name></name></author><category term="CATEGORY-1" /><category term="CATEGORY-2" /><summary type="html"><![CDATA[データベースに関するメンタルモデル]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-09-19T20:46:13+09:00</published><updated>2024-09-19T20:46:13+09:00</updated><id>http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
