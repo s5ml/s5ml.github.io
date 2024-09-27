@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-24T03:46:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">POST-TITLE</title><link href="http://localhost:4000/category-1/category-2/2024/09/21/test.html" rel="alternate" type="text/html" title="POST-TITLE" /><published>2024-09-21T08:43:10+09:00</published><updated>2024-09-21T08:43:10+09:00</updated><id>http://localhost:4000/category-1/category-2/2024/09/21/test</id><content type="html" xml:base="http://localhost:4000/category-1/category-2/2024/09/21/test.html"><![CDATA[<h1 id="データベースに関するメンタルモデル">データベースに関するメンタルモデル</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-27T18:33:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">要件定義における「自然状態」と「自然要件」</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" rel="alternate" type="text/html" title="要件定義における「自然状態」と「自然要件」" /><published>2024-09-23T19:43:10+09:00</published><updated>2024-09-23T19:43:10+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"><![CDATA[<h2 id="背景">背景</h2>
+
+<p>ジョン・ロックの「統治二論」の第二論は、「自然状態」における権利を定義することで、「自然状態に欠けている権利を社会的に維持するために、一部権利を信頼できる人々に委譲することが統治である」とした（Wikipediaからの自己解釈）</p>
+
+<p>本稿はその考え方に着想を得て、<strong>システム開発における「自然状態」「自然要件」を定義する</strong>ことで、システム開発時に要件定義フェーズが遅れても、クソシステムを作らないことの一助となることを目指す</p>
+
+<blockquote class="information">
+  <p><a href=".#information">クソシステム例</a></p>
+
+  <ul>
+    <li>バックアップ機能はあるがリストア機能がない</li>
+    <li>組織再編で組織名が変わると過去の操作履歴を引き継がない</li>
+    <li>商品の検索には商品コード必要なため、商品と商品コードの対応表をオフラインで作っておく必要のあるシステム</li>
+    <li>セッションタイムアウトで入力フォームの値をお釈迦にする</li>
+  </ul>
+</blockquote>
+
+<p>これは、「自然要件を満たしていれば、顧客の要件が何であろうと、クソシステムはできないはず」という仮定に立っている</p>
+
+<h2 id="目的">目的</h2>
+
+<p>顧客、ベンダの要件定義の責任分界点を明確にし、「要件定義フェーズが遅れたためクソシステムになってしまった」というベンダの言い訳を無くす。
+クソシステムにならないための自然要件を満たすのはベンダの責任である。
+ただし、ベンダに責任を押し付けることが目的ではなく、<strong>本来ベンダの責任でやるべきことを明確にすること</strong>が目的である。
+「顧客はIT素人」などを言い訳にするベンダを指す。システム開発を委託する顧客は常に素人である。素人であることを理由にプロフェッショナルとしての仕事ができないのであれば、その者はプロフェッショナルではない。</p>
+
+<p>本稿の目的は「自然要件の定義」までに留め、OSやミドルを実際に設計することまでは踏み込まないが、本稿で議論するところの究極的なゴールは、そのようなOS／ミドルができることである。</p>
+
+<h2 id="用語">用語</h2>
+
+<dl>
+  <dt>顧客</dt>
+  <dd>要望を出す人</dd>
+</dl>
+
+<ul>
+  <li>ユーザ：システムを使う人</li>
+  <li>ベンダ：システムを開発する人</li>
+  <li>顧客要件：顧客が出す要件</li>
+  <li>自然状態：顧客要件が何もない状態でも、システムが正常に動いている状態</li>
+  <li>自然要件：自然状態を維持するために必要な要件</li>
+</ul>
+
+<h2 id="自然状態とは">自然状態とは</h2>
+
+<p>顧客要件が何もない状態でも、システムが正常に稼働し続けている状態。</p>
+
+<p>顧客要件が何もない状態とは、システムが存在しない状態ではない。</p>
+
+<p>ロックが提唱した自然状態でも人間は存在しているし、「自然権」は存在しているとしている。本稿は自然状態を満たすOSを作るという話ではないため、スタート地点としては既存のLinux OSがインストールされたマシンがただ置かれていることを想像するとよい。
+この状態では何のネットワークにも接続しておらず、何の外部デバイスも接続されていない。
+ストレージ等の内部デバイスはあるものとする。
+<strong>接続はされていないが、接続すればそれらを認識し、最低限動かすことができる状態</strong>を想定する。</p>
+
+<p>Linux OSでは<code class="language-plaintext highlighter-rouge">vi</code>等のテキストエディタが標準でインストールされているかもしれない。テキストエディタがインストールされていることが自然要件に必要かどうかは現時点では言及しないが、テキストエディタがインストールされていること自体が、<strong>他の明示的な自然要件を妨害するものでなければ、不要なものがインストールされていることは自然状態を否定するものではないと定義する</strong></p>
+
+<h2 id="自然要件">自然要件</h2>
+
+<p>自然状態を維持するために必要な要件。
+顧客要件に依存せず、ベンダが自身の判断で定める要件。</p>
+
+<h3 id="自然要件とは何でないか">自然要件とは何でないか</h3>
+
+<p>「何でもできるようにしておき、顧客に判断を任せる」はNG。
+Linux OSは開発すれば何でもできる。だから全ての要件は顧客要件である、とする考え方は本稿の目指すところではない。そのような考え方は害悪である</p>
+
+<h2 id="非機能要件との違い">非機能要件との違い</h2>
+
+<h2 id="保守">保守</h2>
+<ul>
+  <li>監視</li>
+  <li>遠隔アクセス</li>
+  <li>ログ</li>
+</ul>
+
+<h3 id="可用性">可用性</h3>
+
+<ul>
+  <li>分散拠点には標準で対応できるべき</li>
+  <li>アプリケーションレベルでどこまで保証するかは個別要件</li>
+</ul>
+
+<h2 id="データ保護">データ保護</h2>
+
+<p>RAIDやアーカイブ、どこまでを自然要件とするか</p>]]></content><author><name></name></author><category term="アーキテクト" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-09-19T20:46:13+09:00</published><updated>2024-09-19T20:46:13+09:00</updated><id>http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">POST-TITLE</title><link href="http://localhost:4000/category-1/category-2/2024/09/19/test.html" rel="alternate" type="text/html" title="POST-TITLE" /><published>2024-09-19T19:43:10+09:00</published><updated>2024-09-19T19:43:10+09:00</updated><id>http://localhost:4000/category-1/category-2/2024/09/19/test</id><content type="html" xml:base="http://localhost:4000/category-1/category-2/2024/09/19/test.html"><![CDATA[<h1 id="データベースに関するメンタルモデル">データベースに関するメンタルモデル</h1>
 
 <h2 id="これは何">これは何？</h2>
 
@@ -18,20 +118,4 @@
 
 <h1 id="どうやって理解を得るか">どうやって理解を得るか</h1>
 
-<p>実装モデルを止める</p>]]></content><author><name></name></author><category term="CATEGORY-1" /><category term="CATEGORY-2" /><summary type="html"><![CDATA[データベースに関するメンタルモデル]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-09-19T20:46:13+09:00</published><updated>2024-09-19T20:46:13+09:00</updated><id>http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/09/19/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<p>実装モデルを止める</p>]]></content><author><name></name></author><category term="CATEGORY-1" /><category term="CATEGORY-2" /><summary type="html"><![CDATA[データベースに関するメンタルモデル]]></summary></entry></feed>

@@ -1,19 +1,52 @@
 body {
-  font-size: 18px;
+  font-size: 16px;
 }
 body > header {
   background-color: #d7e0e4;
 }
 main {
   background-color: #d7e0e4;
+
+  .post-title {
+    font-size: 1.4rem;
+  }
 }
 article {
   background-color: #e0e7eb;
   padding: 10px 30px;
   color: #333;
-  font-size: 1.3rem
+
+  .post-content {
+    h1 {
+      font-size: 1.3rem
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #51617a;
+      border-bottom: 1px solid #acacac;
+      margin-top: 1em;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.55;
+    }
+  }
 }
-.post-content h2 {
-  color: #51617a;
-  border-bottom: 1px solid #acacac;
+
+blockquote {
+  border-left: 2px solid #333;
+  & > p {
+    & > a[href=".#information"] {
+      pointer-events: none;
+      &::before {
+        font-family: 'Font Awesome 6 Pro';
+        font-style: normal;
+        content: "\f672";
+        color: blue;
+      }
+    }
+  }
 }
