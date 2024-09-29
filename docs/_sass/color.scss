@@ -1,18 +1,18 @@
 :root {
   --s5ml-callout-info-icon: #2f69bd;
-  --s5ml-callout-info-text: #04152e;
-  --s5ml-callout-info-bg: hsl(213.91deg 43.4% 79.22%);
+  --s5ml-callout-info-text: #040b16f0;
+  --s5ml-callout-info-bg: hsl(214 47% 84% / 1);
   --s5ml-main-bg-color: hsl(214.29deg 17.07% 67.84%);
-  --s5ml-article-bg-color: #c1ccdd;
+  --s5ml-article-bg-color: #d3dbe8;
 }
 body {
   font-size: 16px;
+  background-color: var(--s5ml-main-bg-color);
 }
 body > header {
   background-color: #d7e0e4;
 }
 main {
-  background-color: var(--s5ml-main-bg-color);
 
   h1.post-title {
     font-size: 2rem;
@@ -22,13 +22,14 @@ main {
 article {
   background-color: var(--s5ml-article-bg-color);
   padding: 10px 30px;
-  color: #333;
+  color: hsla(0, 0%, 0%, 0.95);
 
   .post-content {
     h2 {
       font-size: 1.6rem;
-      color: #51617a;
-      border-bottom: 1px solid #acacac;
+      font-weight: bold;
+      color: #0f2d5c;
+      border-bottom: 1px solid #08172e78;
       margin-top: 1em;
     }
     h3 {
