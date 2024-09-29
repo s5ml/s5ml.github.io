@@ -1,3 +1,10 @@
+:root {
+  --s5ml-callout-info-icon: #2f69bd;
+  --s5ml-callout-info-text: #04152e;
+  --s5ml-callout-info-bg: hsl(213.91deg 43.4% 79.22%);
+  --s5ml-main-bg-color: hsl(214.29deg 17.07% 67.84%);
+  --s5ml-article-bg-color: #c1ccdd;
+}
 body {
   font-size: 16px;
 }
@@ -5,21 +12,19 @@ body > header {
   background-color: #d7e0e4;
 }
 main {
-  background-color: #d7e0e4;
+  background-color: var(--s5ml-main-bg-color);
 
-  .post-title {
-    font-size: 1.4rem;
+  h1.post-title {
+    font-size: 2rem;
+    padding-top: 0.5em;
   }
 }
 article {
-  background-color: #e0e7eb;
+  background-color: var(--s5ml-article-bg-color);
   padding: 10px 30px;
   color: #333;
 
   .post-content {
-    h1 {
-      font-size: 1.3rem
-    }
     h2 {
       font-size: 1.6rem;
       color: #51617a;
@@ -32,20 +37,46 @@ article {
     p {
       font-size: 1.2rem;
       line-height: 1.55;
+      margin-bottom: 0.5em;
     }
   }
 }
 
-blockquote {
-  border-left: 2px solid #333;
-  & > p {
-    & > a[href=".#information"] {
+blockquote:has(> p > a[href^="callout"]) {
+  padding: 0.5em 1em 1.3em 3em;
+  border-radius: 3px 10px 10px 3px;
+  border-left: 0.3em solid var(--s5ml-callout-info-icon);
+  //padding-left: 2em;
+  color: var(--s5ml-callout-info-text);
+  font-style: normal;
+  background-color: var(--s5ml-callout-info-bg);
+  & > p:first-child {
+    text-indent: -1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    & > a:any-link {
+      // position: relative;
       pointer-events: none;
-      &::before {
-        font-family: 'Font Awesome 6 Pro';
-        font-style: normal;
-        content: "\f672";
-        color: blue;
+      color: var(--s5ml-callout-info-text);
+      font-weight: bold;
+      &[href$="info"] {
+        &::before {
+          font-family: 'Font Awesome 6 Pro';
+          font-weight: 900;
+          color: var(--s5ml-callout-info-icon);
+          //content: "\f672";
+          font-size: 1em;
+          content: "\f05a";
+          padding-right: 0.5em;
+          //margin-right: .5em;
+          width: 1em;
+          //white-space: pre;
+          //display: block;
+          // position: absolute;
+          left: -1em;
+          top: 0px;
+          // margin-left: 0.5em;
+        }
       }
     }
   }

@@ -1,11 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-27T18:33:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">要件定義における「自然状態」と「自然要件」</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" rel="alternate" type="text/html" title="要件定義における「自然状態」と「自然要件」" /><published>2024-09-23T19:43:10+09:00</published><updated>2024-09-23T19:43:10+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"><![CDATA[<h2 id="背景">背景</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-30T01:06:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
+
+<p>システム開発において「<strong>丸投げ</strong>」がよく誤解される。丸投げは「悪」ではない。</p>
+
+<h2 id="コアとノンコア">コアとノンコア</h2>
+
+<p>ある企業の事業運営について、コア領域とノンコア領域がある</p>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">家に入らない家具を買ってしまったり、実は要らないものを買って家族に怒られたことの無い人だけがそう言うこと言って良いよ。<br />通常の品物は返品可能なだけで間違ったものを発注したからと言ってオーダーメイドの品は返品出来ないだけ。<br />そもそも丸投げするなら丸投げすると最初から言ってくれないと。 <a href="https://t.co/vZk9HUoqiI">https://t.co/vZk9HUoqiI</a></p>&mdash; Takashi Miyamoto (@tmiya_) <a href="https://twitter.com/tmiya_/status/1840267208116842710?ref_src=twsrc%5Etfw">September 29, 2024</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3 id="家具が家に入らない例を考える">「家具が家に入らない」例を考える</h3>
+
+<p>購入した家具が家に入らない場合を考える。</p>
+
+<ul>
+  <li>販売店
+    <ul>
+      <li>瑕疵なし：製品を提供できているなら瑕疵はない</li>
+    </ul>
+  </li>
+  <li>家具製造業者
+    <ul>
+      <li>瑕疵なし：販売した個体に異常が無ければ問題ない</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="アーキテクト" /><summary type="html"><![CDATA[丸投げ]]></summary></entry><entry><title type="html">要件定義における「自然状態」と「自然要件」</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" rel="alternate" type="text/html" title="要件定義における「自然状態」と「自然要件」" /><published>2024-09-23T19:43:10+09:00</published><updated>2024-09-23T19:43:10+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>ジョン・ロックの「統治二論」の第二論は、「自然状態」における権利を定義することで、「自然状態に欠けている権利を社会的に維持するために、一部権利を信頼できる人々に委譲することが統治である」とした（Wikipediaからの自己解釈）</p>
 
 <p>本稿はその考え方に着想を得て、<strong>システム開発における「自然状態」「自然要件」を定義する</strong>ことで、システム開発時に要件定義フェーズが遅れても、クソシステムを作らないことの一助となることを目指す</p>
 
-<blockquote class="information">
-  <p><a href=".#information">クソシステム例</a></p>
+<blockquote>
+  <p><a href="callout-info">クソシステム例</a></p>
+
+  <p>「クソシステム」とはお行儀のよい言葉ではないが、ユーザが不満に思うシステムを端的に表す語として丁度良いため本稿では用いていきたい。
+具体的には下記のような特徴のあるシステムを指す</p>
 
   <ul>
     <li>バックアップ機能はあるがリストア機能がない</li>
@@ -59,14 +88,21 @@
 <p>自然状態を維持するために必要な要件。
 顧客要件に依存せず、ベンダが自身の判断で定める要件。</p>
 
-<h3 id="自然要件とは何でないか">自然要件とは何でないか</h3>
+<blockquote class="callout">
+  <p>test</p>
 
-<p>「何でもできるようにしておき、顧客に判断を任せる」はNG。
+  <p><a href="alert">自然要件とは何でないか</a></p>
+</blockquote>
+<blockquote>
+
+  <p>「何でもできるようにしておき、顧客に判断を任せる」はNG。
 Linux OSは開発すれば何でもできる。だから全ての要件は顧客要件である、とする考え方は本稿の目指すところではない。そのような考え方は害悪である</p>
+</blockquote>
 
 <h2 id="非機能要件との違い">非機能要件との違い</h2>
 
 <h2 id="保守">保守</h2>
+
 <ul>
   <li>監視</li>
   <li>遠隔アクセス</li>
