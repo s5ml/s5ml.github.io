@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-30T02:29:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-01T08:14:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
 
 <p>システム開発において「<strong>丸投げ</strong>」がよく誤解される。丸投げは「悪」ではない。</p>
 
@@ -9,7 +9,7 @@
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">家に入らない家具を買ってしまったり、実は要らないものを買って家族に怒られたことの無い人だけがそう言うこと言って良いよ。<br />通常の品物は返品可能なだけで間違ったものを発注したからと言ってオーダーメイドの品は返品出来ないだけ。<br />そもそも丸投げするなら丸投げすると最初から言ってくれないと。 <a href="https://t.co/vZk9HUoqiI">https://t.co/vZk9HUoqiI</a></p>&mdash; Takashi Miyamoto (@tmiya_) <a href="https://twitter.com/tmiya_/status/1840267208116842710?ref_src=twsrc%5Etfw">September 29, 2024</a></blockquote>
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<h3 id="家具が家に入らない例を考える">「家具が家に入らない」例を考える</h3>
+<h3 id="家具が家に入らない例">「家具が家に入らない」例</h3>
 
 <p>購入した家具が家に入らない場合を考える。</p>
 
@@ -24,7 +24,21 @@
       <li>瑕疵なし：販売した個体に異常が無ければ問題ない</li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="アーキテクト" /><summary type="html"><![CDATA[丸投げ]]></summary></entry><entry><title type="html">要件定義における「自然状態」と「自然要件」</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" rel="alternate" type="text/html" title="要件定義における「自然状態」と「自然要件」" /><published>2024-09-23T19:43:10+09:00</published><updated>2024-09-23T19:43:10+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"><![CDATA[<h2 id="背景">背景</h2>
+</ul>
+
+<h3 id="オーダーメイドのスーツの例">「オーダーメイドのスーツ」の例</h3>
+
+<p>「お前は採寸しないのか」という指摘もあったが、採寸は仕立て屋がやること。「袖周りの採寸忘れました」「言われてないので裄丈測っていません。袖が短い？それはお客様の都合です」なんてことは許されない。</p>
+
+<p><strong>着られない服</strong>と<strong>気に入らない服</strong>の区別が付いていない。気に入るかどうかは客次第であり、当初イマイチだと思った服が着ているうちに好きになることもあればその逆もある。「顧客が本当に欲しかったモノは顧客にも分からない」というのは<strong>気に入らない服</strong>の話である。</p>
+
+<p><strong>着られない服</strong>は客の好みに関係なく着ることができないか、客が無理をして着るような事態を指している。これは仕立て屋のミスである。仕立て屋は<strong>気に入らない服</strong>を納めてしまうリスクは避けられないが、<strong>着られない服</strong>を納めることは許されない。そんな事態にはならない。納品物が着られない場合、客は返品するし店もそれに応じる。システム開発においてはそれを顧客のせいにすることがまかり通っている</p>
+
+<h2 id="受注したなら完成させろ">受注したなら完成させろ</h2>
+
+<p>ベンダへの丸投げを批判するならすればいい。但し、その場合受注するな。受注したなら契約は履行しなければならない。プロフェッショナリズムを発揮して完成させなければならない。</p>
+
+<p>受注後に顧客が仕様変更を繰り返したとしても、受注したベンダは契約に従って黙々と対応する。拒否もすることもできる。契約を超えた無理を通すのは違法である。契約を超えた無理を現場に押し込むのはベンダの社内の問題である。出来上がるソフトウェアは常に<strong>気に入らない服になる可能性はあるが、着られる服</strong>でなければならない</p>]]></content><author><name></name></author><category term="アーキテクト" /><summary type="html"><![CDATA[丸投げ]]></summary></entry><entry><title type="html">要件定義における「自然状態」と「自然要件」</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" rel="alternate" type="text/html" title="要件定義における「自然状態」と「自然要件」" /><published>2024-09-23T19:43:10+09:00</published><updated>2024-09-23T19:43:10+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>ジョン・ロックの「統治二論」の第二論は、「自然状態」における権利を定義することで、「自然状態に欠けている権利を社会的に維持するために、一部権利を信頼できる人々に委譲することが統治である」とした（Wikipediaからの自己解釈）</p>
 
