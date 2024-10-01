@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-01T08:14:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-01T22:49:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
 
 <p>システム開発において「<strong>丸投げ</strong>」がよく誤解される。丸投げは「悪」ではない。</p>
 
@@ -45,20 +45,20 @@
 <p>本稿はその考え方に着想を得て、<strong>システム開発における「自然状態」「自然要件」を定義する</strong>ことで、システム開発時に要件定義フェーズが遅れても、クソシステムを作らないことの一助となることを目指す</p>
 
 <blockquote>
-  <p><a href="callout-info">クソシステム例</a></p>
+  <p><a href="callout-info">クソシステム</a></p>
 
-  <p>「クソシステム」とはお行儀のよい言葉ではないが、ユーザが不満に思うシステムを端的に表す語として丁度良いため本稿では用いていきたい。
+  <p>「クソ」とは行儀の悪い言葉だが、単なるユーザの不満ではなく、客観的に評価しても使えないダメなシステムを端的に表す語として本稿では用いていきたい。
 具体的には下記のような特徴のあるシステムを指す</p>
 
   <ul>
     <li>バックアップ機能はあるがリストア機能がない</li>
-    <li>組織再編で組織名が変わると過去の操作履歴を引き継がない</li>
+    <li>組織再編で組織名が変わると過去の操作履歴を引き継がない（データはあっても検索できない）</li>
     <li>商品の検索には商品コード必要なため、商品と商品コードの対応表をオフラインで作っておく必要のあるシステム</li>
-    <li>セッションタイムアウトで入力フォームの値をお釈迦にする</li>
+    <li>セッションタイムアウトでユーザが入力したフォームを警告なくお釈迦にする
+クソシステムはユーザとの見解の相違や、ユーザが気に入る／気に入らないのレベルではなく、
+これは、「自然要件を満たしていれば、顧客の要件が何であろうと、クソシステムはできないはず」という仮定に立っている</li>
   </ul>
 </blockquote>
-
-<p>これは、「自然要件を満たしていれば、顧客の要件が何であろうと、クソシステムはできないはず」という仮定に立っている</p>
 
 <h2 id="目的">目的</h2>
 
