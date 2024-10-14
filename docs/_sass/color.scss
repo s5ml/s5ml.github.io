@@ -2,8 +2,10 @@
   --s5ml-callout-info-icon: #2f69bd;
   --s5ml-callout-info-text: #040b16f0;
   --s5ml-callout-info-bg: hsl(214 47% 84% / 1);
-  --s5ml-main-bg-color: hsl(214.29deg 17.07% 67.84%);
+  --s5ml-main-bg-color: light-dark(hsl(214.29deg 17.07% 67.84%), #333);
   --s5ml-article-bg-color: hsl(217 17% 86% / 1);
+  --s5ml-text-color: light-dark(hsla(0, 0%, 0%, 0.95), #fff);
+  --s5ml-heading-text-color: light-dark(hsla(0, 0%, 0%, 0.95), #fff);
 }
 body {
   font-size: 16px;
@@ -22,14 +24,14 @@ main {
 article {
   background-color: var(--s5ml-article-bg-color);
   padding: 10px 30px;
-  color: hsla(0, 0%, 0%, 0.95);
+  color: var(--s5ml-text-color);
 
   .post-content {
     h2 {
       font-size: 1.6rem;
       font-weight: bold;
-      color: #0f2d5c;
-      border-bottom: 1px solid #08172e78;
+      color: var(--s5ml-heading-text-color);
+      border-bottom: 1px solid var(--s5ml-heading-text-color);
       margin-top: 1em;
     }
     h3 {
@@ -37,7 +39,7 @@ article {
     }
     p {
       font-size: 1.2rem;
-      line-height: 1.55;
+      line-height: 1.7;
       margin-bottom: 0.5em;
     }
   }

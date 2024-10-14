@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-01T22:49:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-15T02:37:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">はごめのおぺたにのす</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">日本人は勤勉でなくなった</title><link href="http://localhost:4000/%E5%8A%B4%E5%83%8D/2024/10/13/%E6%97%A5%E6%9C%AC%E4%BA%BA%E3%81%8C%E5%83%8D%E3%81%8B%E3%81%AA%E3%81%84.html" rel="alternate" type="text/html" title="日本人は勤勉でなくなった" /><published>2024-10-13T00:00:00+09:00</published><updated>2024-10-13T00:00:00+09:00</updated><id>http://localhost:4000/%E5%8A%B4%E5%83%8D/2024/10/13/%E6%97%A5%E6%9C%AC%E4%BA%BA%E3%81%8C%E5%83%8D%E3%81%8B%E3%81%AA%E3%81%84</id><content type="html" xml:base="http://localhost:4000/%E5%8A%B4%E5%83%8D/2024/10/13/%E6%97%A5%E6%9C%AC%E4%BA%BA%E3%81%8C%E5%83%8D%E3%81%8B%E3%81%AA%E3%81%84.html"><![CDATA[<h2 id="日本人は働かない">日本人は働かない</h2>
+
+<p>この記事が元がちょっと気になった。</p>
+
+<blockquote>
+  <p>具体像を確認しようとする教授に、TSMC幹部ははっきり答えた。「日本人は想定より働かないが、博士号を取得できる学生なら違うはずだ。積極的に受け入れるルートを広く築きたい」</p>
+
+  <p><cite><a href="https://business.nikkei.com/atcl/gen/19/00678/100800001/">［新連載］TSMC、博士獲得へ全国行脚　「昼夜問わず仕事できる人材」</a></cite></p>
+</blockquote>
+
+<p><img src="https://business.nikkei.com/atcl/gen/19/00678/100800001/" alt="card" /></p>
+
+<blockquote class="twitter-tweet" data-theme="light"><p lang="ja" dir="ltr">日本人はもっと残業してくれると思ってたけどみんな定時で帰っちゃう、の件、国民全員ががむしゃらに働かなくてもよいフェーズになった、ってことでどちらかというと歓迎すべき話なんじゃないかしらね…。<br />働きたいのか、働かざるをえないのか、は切り分けていきたいところ。</p>&mdash; 外資系うさぎのちょこさん（noteのキャリア相談室リニューアル） (@ChoConejito) <a href="https://twitter.com/ChoConejito/status/1845098727045988780?ref_src=twsrc%5Etfw">October 12, 2024</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>日本人は働かない事ばかり考えるようになった。</p>
+
+<p>海外諸国に比して給料が長期にわたって上がっていない。この事実を以て「政府が悪い！」と考える他責本願。給料を決めるのは起業であり、給料が上がらないのは従業員個々人の力不足。</p>
+
+<p>勤勉が売りだったはずなのに、どうしてこうなった…</p>
+
+<h2 id="サボる事ばかり考える働き方改革">サボる事ばかり考える「働き方改革」</h2>
+
+<p>「働き方改革」という施策が誤りだった。労働に限らないが、政府ができることは規制緩和であり、規制を強化することで何かを産業を促進させようなんて無理。</p>
+
+<p>指針を示せるリーダーがいない。</p>
+
+<p>氷河期世代を見捨てた</p>]]></content><author><name></name></author><category term="労働" /><summary type="html"><![CDATA[日本人は働かない]]></summary></entry><entry><title type="html">システム開発における「丸投げ」の是非</title><link href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html" rel="alternate" type="text/html" title="システム開発における「丸投げ」の是非" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92</id><content type="html" xml:base="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/29/%E4%B8%B8%E6%8A%95%E3%81%92.html"><![CDATA[<h2 id="丸投げ">丸投げ</h2>
 
 <p>システム開発において「<strong>丸投げ</strong>」がよく誤解される。丸投げは「悪」ではない。</p>
 
@@ -117,11 +144,23 @@ Linux OSは開発すれば何でもできる。だから全ての要件は顧客
 
 <h2 id="保守">保守</h2>
 
+<h3 id="監視monitoringと警告alerting">監視（monitoring）と警告（alerting）</h3>
+
+<p><img src="/assets/img/alert_log_stat.png" alt="alert" /></p>
+
+<dl>
+  <dt>アラート</dt>
+  <dd>保守部隊が</dd>
+</dl>
+
 <ul>
-  <li>監視</li>
   <li>遠隔アクセス</li>
   <li>ログ</li>
 </ul>
+
+<p>監視（monitoring）と警告（alerting）</p>
+
+<p>誰がどのデータにアクセスするか</p>
 
 <h3 id="可用性">可用性</h3>
 
