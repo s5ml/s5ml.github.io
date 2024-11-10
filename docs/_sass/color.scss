@@ -1,0 +1,148 @@
+:root {
+  --s5ml-callout-info-icon: light-dark(#2f69bd, hsl(206, 78%, 78%));
+  --s5ml-callout-info-text: light-dark(#040b16f0, hsl(206, 21%, 73%));
+  --s5ml-callout-info-bg: light-dark(hsl(214 47% 84% / 1), hsl(206, 60%, 13%));
+
+  --s5ml-main-bg-color: light-dark(hsl(214, 26%, 85%), #1b1d1e);
+  --s5ml-article-bg-color: light-dark(hsl(217, 11%, 89%), #161b1e);
+
+  --s5ml-text-color: light-dark(hsla(0, 0%, 0%, 0.95), #bebbb2);
+  --s5ml-heading-text-color: light-dark(#0f2d5c, #b98d57);
+  
+  --s5ml-strong-text-color: light-dark(#0f2d5c, hsl(17, 30%, 66%));
+  --s5ml-strong-bg-color: light-dark(hsl(217, 16%, 95%), hsl(30, 0%, 7%));
+  
+  --s5ml-code-text-color: light-dark(#254c62, #cdb36f);
+  --s5ml-code-bg-color: light-dark(hsl(217, 3%, 80%), #3a3628);
+}
+
+#theme-toggle {
+  float: right;
+  height: 1rem;
+  width: 3rem;
+  &::before {
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 900;
+    color: light-dark(red, blue);
+    font-size: 1rem; //content: "\f186";
+    padding-right: 0.5em;
+    width: 1rem;
+    left: -1rem;
+    top: 0px;
+  }
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--s5ml-main-bg-color);
+}
+body > header {
+  background-color: #d7e0e4;
+}
+main {
+
+  h1.post-title {
+    font-size: 2rem;
+    padding-top: 0.5em;
+  }
+}
+article {
+  background-color: var(--s5ml-article-bg-color);
+  padding: 10px 30px;
+  color: var(--s5ml-text-color);
+
+  .post-content {
+    h2 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--s5ml-heading-text-color);
+      border-bottom: 1px solid var(--s5ml-heading-text-color);
+      margin-top: 1em;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 1em;
+      font-weight: 400;
+    }
+    strong {
+      color:var(--s5ml-strong-text-color);
+      background-color: var(--s5ml-strong-bg-color);
+    }
+    code {
+      color:var(--s5ml-code-text-color);
+      background-color: var(--s5ml-code-bg-color);
+      border: none;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+      margin-left: 0.1em;
+      margin-right:0.1em;
+      border-radius: 5px;
+    }
+  }
+}
+
+blockquote:has(> p > a[href^="callout"]) {
+  padding: 0.5em 1em 1.3em 3em;
+  border-radius: 3px 10px 10px 3px;
+  border-left: 0.3em solid var(--s5ml-callout-info-icon);
+  //padding-left: 2em;
+  color: var(--s5ml-callout-info-text);
+  font-style: normal;
+  background-color: var(--s5ml-callout-info-bg);
+  & > p:first-child {
+    text-indent: -1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    & > a:any-link {
+      // position: relative;
+      pointer-events: none;
+      color: var(--s5ml-callout-info-text);
+      font-weight: bold;
+      &[href$="info"] {
+        &::before {
+          font-family: 'Font Awesome 6 Pro';
+          font-weight: 900;
+          color: var(--s5ml-callout-info-icon);
+          //content: "\f672";
+          font-size: 1em;
+          content: "\f05a";
+          padding-right: 0.5em;
+          //margin-right: .5em;
+          width: 1em;
+          //white-space: pre;
+          //display: block;
+          // position: absolute;
+          left: -1em;
+          top: 0px;
+          // margin-left: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+.is-theme-light {
+  #theme-toggle::before {
+    content: "\f185";
+  }
+}
+.is-theme-dark {
+  #theme-toggle::before {
+    content: "\f186";
+  }
+}
+@media (prefers-color-scheme: light) {
+  #theme-toggle::before {
+    content: "\f185";
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #theme-toggle::before {
+    content: "\f186";
+  }
+}
