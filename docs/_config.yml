@@ -35,9 +35,6 @@ theme: minima
 plugins:
   - jekyll-feed
 lsi: false
-
-sass:
-  sass_dir: docs/_sass
   
 # Exclude from processing.
 # The following items will not be processed, by default.
