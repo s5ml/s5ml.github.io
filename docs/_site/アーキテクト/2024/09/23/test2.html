@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>要件定義における「自然状態」と「自然要件」 | はごめのおぺたにのす</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="要件定義における「自然状態」と「自然要件」" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="背景" />
+<meta property="og:description" content="背景" />
+<link rel="canonical" href="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" />
+<meta property="og:url" content="http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" />
+<meta property="og:site_name" content="はごめのおぺたにのす" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-23T19:43:10+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="要件定義における「自然状態」と「自然要件」" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-23T19:43:10+09:00","datePublished":"2024-09-23T19:43:10+09:00","description":"背景","headline":"要件定義における「自然状態」と「自然要件」","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"},"url":"http://localhost:4000/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- our project just needs Font Awesome Solid + Brands -->
+  <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css" >
+  <link rel="stylesheet" href="/assets/fontawesome/css/solid.css" >
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/custom.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="はごめのおぺたにのす" /><script src="/assets/js/theme.js"></script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">はごめのおぺたにのす</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+
+      </nav>
+      <button id="theme-toggle" onclick="switchTheme()"></button></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">要件定義における「自然状態」と「自然要件」</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-09-23T19:43:10+09:00" itemprop="datePublished">Sep 23, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="背景">背景</h2>
+
+<p>ジョン・ロックの「統治二論」の第二論は、「自然状態」における権利を定義することで、「自然状態に欠けている権利を社会的に維持するために、一部権利を信頼できる人々に委譲することが統治である」とした（Wikipediaからの自己解釈）</p>
+
+<p>本稿はその考え方に着想を得て、<strong>システム開発における「自然状態」「自然要件」を定義する</strong>ことで、システム開発時に要件定義フェーズが遅れても、クソシステムを作らないことの一助となることを目指す</p>
+
+<blockquote>
+  <p><a href="callout-info">クソシステム</a></p>
+
+  <p>「クソ」とは行儀の悪い言葉だが、単なるユーザの不満ではなく、客観的に評価しても使えないダメなシステムを端的に表す語として本稿では用いていきたい。
+具体的には下記のような特徴のあるシステムを指す</p>
+
+  <ul>
+    <li>バックアップ機能はあるがリストア機能がない</li>
+    <li>組織再編で組織名が変わると過去の操作履歴を引き継がない（データはあっても検索できない）</li>
+    <li>商品の検索には商品コード必要なため、商品と商品コードの対応表をオフラインで作っておく必要のあるシステム</li>
+    <li>セッションタイムアウトでユーザが入力したフォームを警告なくお釈迦にする
+クソシステムはユーザとの見解の相違や、ユーザが気に入る／気に入らないのレベルではなく、
+これは、「自然要件を満たしていれば、顧客の要件が何であろうと、クソシステムはできないはず」という仮定に立っている</li>
+  </ul>
+</blockquote>
+
+<h2 id="目的">目的</h2>
+
+<p>顧客、ベンダの要件定義の責任分界点を明確にし、「要件定義フェーズが遅れたためクソシステムになってしまった」というベンダの言い訳を無くす。
+クソシステムにならないための自然要件を満たすのはベンダの責任である。
+ただし、ベンダに責任を押し付けることが目的ではなく、<strong>本来ベンダの責任でやるべきことを明確にすること</strong>が目的である。
+「顧客はIT素人」などを言い訳にするベンダを指す。システム開発を委託する顧客は常に素人である。素人であることを理由にプロフェッショナルとしての仕事ができないのであれば、その者はプロフェッショナルではない。</p>
+
+<p>本稿の目的は「自然要件の定義」までに留め、OSやミドルを実際に設計することまでは踏み込まないが、本稿で議論するところの究極的なゴールは、そのようなOS／ミドルができることである。</p>
+
+<h2 id="用語">用語</h2>
+
+<dl>
+  <dt>顧客</dt>
+  <dd>要望を出す人</dd>
+</dl>
+
+<ul>
+  <li>ユーザ：システムを使う人</li>
+  <li>ベンダ：システムを開発する人</li>
+  <li>顧客要件：顧客が出す要件</li>
+  <li>自然状態：顧客要件が何もない状態でも、システムが正常に動いている状態</li>
+  <li>自然要件：自然状態を維持するために必要な要件</li>
+</ul>
+
+<h2 id="自然状態とは">自然状態とは</h2>
+
+<p>顧客要件が何もない状態でも、システムが正常に稼働し続けている状態。</p>
+
+<p>顧客要件が何もない状態とは、システムが存在しない状態ではない。</p>
+
+<p>ロックが提唱した自然状態でも人間は存在しているし、「自然権」は存在しているとしている。本稿は自然状態を満たすOSを作るという話ではないため、スタート地点としては既存のLinux OSがインストールされたマシンがただ置かれていることを想像するとよい。
+この状態では何のネットワークにも接続しておらず、何の外部デバイスも接続されていない。
+ストレージ等の内部デバイスはあるものとする。
+<strong>接続はされていないが、接続すればそれらを認識し、最低限動かすことができる状態</strong>を想定する。</p>
+
+<p>Linux OSでは<code class="language-plaintext highlighter-rouge">vi</code>等のテキストエディタが標準でインストールされているかもしれない。テキストエディタがインストールされていることが自然要件に必要かどうかは現時点では言及しないが、テキストエディタがインストールされていること自体が、<strong>他の明示的な自然要件を妨害するものでなければ、不要なものがインストールされていることは自然状態を否定するものではないと定義する</strong></p>
+
+<h2 id="自然要件">自然要件</h2>
+
+<p>自然状態を維持するために必要な要件。
+顧客要件に依存せず、ベンダが自身の判断で定める要件。</p>
+
+<blockquote class="callout">
+  <p>test</p>
+
+  <p><a href="alert">自然要件とは何でないか</a></p>
+</blockquote>
+<blockquote>
+
+  <p>「何でもできるようにしておき、顧客に判断を任せる」はNG。
+Linux OSは開発すれば何でもできる。だから全ての要件は顧客要件である、とする考え方は本稿の目指すところではない。そのような考え方は害悪である</p>
+</blockquote>
+
+<h2 id="非機能要件との違い">非機能要件との違い</h2>
+
+<h2 id="保守">保守</h2>
+
+<h3 id="監視monitoringと警告alerting">監視（monitoring）と警告（alerting）</h3>
+
+<p><img src="/assets/img/alert_log_stat.png" alt="alert" /></p>
+
+<dl>
+  <dt>アラート</dt>
+  <dd>保守部隊が</dd>
+</dl>
+
+<ul>
+  <li>遠隔アクセス</li>
+  <li>ログ</li>
+</ul>
+
+<p>監視（monitoring）と警告（alerting）</p>
+
+<p>誰がどのデータにアクセスするか</p>
+
+<h3 id="可用性">可用性</h3>
+
+<ul>
+  <li>分散拠点には標準で対応できるべき</li>
+  <li>アプリケーションレベルでどこまで保証するかは個別要件</li>
+</ul>
+
+<h2 id="データ保護">データ保護</h2>
+
+<p>RAIDやアーカイブ、どこまでを自然要件とするか</p>
+
+  </div><a class="u-url" href="/%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88/2024/09/23/test2.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">はごめのおぺたにのす</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">はごめのおぺたにのす</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
